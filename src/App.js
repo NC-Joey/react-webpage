@@ -6,8 +6,11 @@ import Hero from './components/Hero';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  Aos.init();
   return (
     <Fragment>
       <BrowserRouter>

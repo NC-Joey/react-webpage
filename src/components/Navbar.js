@@ -6,7 +6,7 @@ const Navbar = () => {
     <Fragment>
         <header className='header'>
             <div className='brand'>
-                <img src={logo} alt='logo'/>
+                <a href='/'><img src={logo} alt='logo'/></a>
             </div>
 
             <nav className='navbar'>
