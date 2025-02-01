@@ -11,9 +11,9 @@ const Navbar = () => {
 
             <nav className='navbar'>
                 <ul>
-                    <li>Home</li>
-                    <li>FAQ</li>
-                    <li>About</li>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/faq'>FAQ</a></li>
+                    <li><a href='/about'>About</a></li>
                 </ul>
             </nav>
             <div className='menuBar'><i class='bx bx-menu'></i></div>
