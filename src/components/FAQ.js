@@ -4,8 +4,8 @@ import { Fragment } from 'react'
 const FAQ = () => {
   return (
     <Fragment>
-        <section className='about'>
-            <div className='about-content'>
+        <section className='faq'>
+            <div className='faq-content'>
                 <h2>Have an Issue?</h2>
                 <button>Get Help</button>
             </div>
