@@ -1,7 +1,24 @@
 import React, { Fragment } from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import logo from '../assets/images/code-react.png'
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { MdClose } from "react-icons/md";
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+        setNav(!nav)
+    }
+
+    const navStyle = ({isActive}) => {
+        return {
+            color: isActive? 'red': 'unset',
+
+
+        }
+    }
   return (
     <Fragment>
         <header className='header'>
@@ -11,13 +28,25 @@ const Navbar = () => {
 
             <nav className='navbar'>
                 <ul>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/faq'>FAQ</a></li>
-                    <li><a href='/about'>About</a></li>
+                    <li><NavLink style={navStyle} to='/'>Home</NavLink></li>
+                    <li><NavLink style={navStyle} to='/faq'>FAQ</NavLink></li>
+                    <li><NavLink style={navStyle} to='/about'>About</NavLink></li>
+                    <li><NavLink style={navStyle} to='/shop'>Shop</NavLink></li>
                 </ul>
             </nav>
-            <div className='menuBar'><i class='bx bx-menu'></i></div>
+            <HiOutlineMenuAlt3 className='menuBar' onClick={()=>handleNav()}/><br></br>
+            
         </header>
+        {nav && <aside  className='aside'>
+            <div className='closeDiv'>
+                <MdClose className='closeMenu' onClick={()=>handleNav()} />
+            </div>
+                <Link className='link' to='/'>Home</Link>
+                <Link className='link' to='/faq'>FAQ</Link>
+                <Link className='link' to='/about'>About</Link>
+                <Link className='link' to='/shop'>Shop</Link>
+                
+            </aside>}
     </Fragment>
   )
 }

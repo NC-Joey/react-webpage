@@ -6,8 +6,8 @@ const About = () => {
     <Fragment>
         <section className='about'>
             <div className='about-content'>
-                <h2 data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='500'>About Code React</h2>
-                <button data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='1000'>Learn More</button>
+                <h2>About Code React</h2>
+                <button>Learn More</button>
             </div>
         </section>
     </Fragment>
