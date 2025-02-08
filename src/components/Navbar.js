@@ -26,8 +26,8 @@ const Navbar = () => {
                 <a href='/'><img src={logo} alt='logo'/></a>
             </div>
 
-            <nav className='navbar'>
-                <ul>
+            <nav className='navBar d-flex justify-content-end align-items-center'>
+                <ul className='m-0'>
                     <li><NavLink style={navStyle} to='/'>Home</NavLink></li>
                     <li><NavLink style={navStyle} to='/faq'>FAQ</NavLink></li>
                     <li><NavLink style={navStyle} to='/about'>About</NavLink></li>
