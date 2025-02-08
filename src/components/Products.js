@@ -14,6 +14,8 @@ import tumbler from '../assets/images/products-white/tumbler.jpg'
 
 
 const Products = () => {
+    const assets = [backpack, bottle, clock, hoodie, mug, notebook, pouch, shorts, toteBag, tumbler]
+    console.log(assets)
     return (
         <div className='row mx-0 g-4 px-3 pt-4 px-md-5'>
             {products.map(product => <ProductCard image={product.image} title={product.title} price={product.price} />)}
