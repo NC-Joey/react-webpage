@@ -1,13 +1,13 @@
 import React from 'react'
-import ProductCard from './ProductCard'
+import Products from './Products'
 
 const Shop = () => {
   return (
     
-    <section className='product'>
+    <section className='product py-5'>
     <h2 className='text-center'>Get your own Code React Merch</h2>
     <div className=''>
-      <ProductCard />
+      <Products />
     </div>
 </section>
   )
